@@ -1,1 +1,1 @@
-https://firstdrectar.github.io/webprogbase-lab1/
+[webprogbase-lab1](https://firstdrectar.github.io/webprogbase-lab1/index.html)
