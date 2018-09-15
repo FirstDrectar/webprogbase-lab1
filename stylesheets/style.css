@@ -1,5 +1,6 @@
 body{
-    background-color: #DCFA70;
+    /* background-color: #DCFA70; */
+    counter-reset: li;
 }
 
 img{
@@ -14,23 +15,11 @@ a{
     font-family: 'Frijole', cursive;
     text-align: center;
 }
-ul {
-    font-size: 24px;
-    margin-left: 40px;
-    padding-left: 0px;
-    width: 20%;
-    list-style-type: none;
-    border: 1px solid rgb(255, 0, 0);
-}
 .imgNoRad{
     border-radius: 0;
     width: 300px;
 }
-li{
 
-
-    border-bottom: 1px solid rgb(255, 0, 0);  
-}
 h1{
     text-align: center;
     font-family: 'Kaushan Script', cursive;
@@ -48,15 +37,119 @@ table {
     width: 960px;
 }
 .menu{
-    /* background-color: #D962C7; */
     margin: 0 auto;
     font-family: 'Gloria Hallelujah', cursive;
     text-align: center;
+    width: 37.6%;
+
     
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-radius :5px;
+    width: fit-content; 
+}
+
+.menu li {
+    float: left;
+    height: 55px;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 17px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #111;
 }
 .pageContent{
     background-color:#53DF00;
     height: 300px;
     font-family: 'Contrail One', cursive;
+    border-style: outset;
+    border-color:  #23dd10;
+}
+/* http://www.sitehere.ru/krasivoe-oformlenie-spiskov-na-css3 */
+.rectangle-list a {
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em .8em;
+    margin: .5em 0 .5em 2.5em;
+    background: rgb(203, 169, 219);
+    color: white;
+    text-decoration: none;
+    transition: all .3s ease-out;
+    
+}
+ 
+.rectangle-list a:hover {
+    background: #111;
+}	
+ 
+.rectangle-list a:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;	
+    left: -2.5em;
+    top: 50%;
+    margin-top: -1em;
+    background: #111;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+ 
+.rectangle-list a:after {
+    position: absolute;	
+    content: '';
+    border: .5em solid transparent;
+    left: -1em;
+    top: 50%;
+    margin-top: -.5em;
+    transition: all .3s ease-out;				
+}
+ 
+.rectangle-list a:hover:after {
+    left: -.5em;
+    border-left-color: #111;				
+}
+.rectangle-list li {
+    list-style-type: none;
 
 }
+
+table {
+    border-spacing: 0 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+    th {
+    padding: 10px 20px;
+    background: #56433D;
+    color: #F9C941;
+    border-right: 2px solid; 
+    font-size: 0.9em;
+    }
+   
+    td {
+    vertical-align: middle;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    border-top: 2px solid #56433D;
+    border-bottom: 2px solid #56433D;
+    border-right: 2px solid #56433D;
+    }
+ 
+    
